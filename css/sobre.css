@@ -1,0 +1,70 @@
+.sobre {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5rem 0;
+}
+
+.sobre h1{
+    font-size: 3rem;
+    background: #000000;
+    background: -webkit-linear-gradient(
+      to right,
+      #1aff00,
+      #9afa89
+    );
+    background: linear-gradient(
+      to right,
+      #1aff00,
+      #9afa89
+    );
+    background-size: 100%;
+    font-family: 'Press Start 2P', cursive;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #00e61f;
+}
+
+.sobre__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+}
+
+.sobre__container h1{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background: #000000;
+    background: -webkit-linear-gradient(
+      to right,
+      #fbfbfb,
+      #bcbcbc
+    );
+    background: linear-gradient(
+      to right,
+      #fbfbfb,
+      #bcbcbc
+    );
+    background-size: 100%;
+    font-family: sans-serif;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
