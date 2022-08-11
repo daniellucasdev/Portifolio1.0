@@ -82,3 +82,26 @@ function openInNewTab(url3) {
 btn3.addEventListener('click', () => {
   openInNewTab(url3)
 })
+
+//Tools
+
+const skills = document.querySelectorAll('.skill-box');
+const descricao = document.querySelector('.texto-descricao');
+const sobreSkill = [
+                    '<p>HTML</p> <br> <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
+                    '<p>CSS</p> <br> <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
+                    '<p>JavaScript</p> <br> <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
+                    '<p>VueJS</p> <br> <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p> <br>',
+                    '<p>TailwindCSS</p> <br> <p>TailwindCSS é um framework de utilidade com o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet, este sendo substituído pela própria Class.</p> <br>',
+                    '<p>GIT</p> <br> <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
+                    '<p>Github</p> <br> <p>O GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.</p> <br>',
+]
+skills.forEach(  (elemento, index) => {
+    let index1 = index;
+    elemento.addEventListener('mouseover', (evento) => {
+        descricao.innerHTML = `<p>${sobreSkill[index1]} </p>` ;
+    } )
+    elemento.addEventListener('mouseout', (evento, elemento,) => {
+        descricao.innerHTML = 'Dê uma olhada nas ferramentas que conheço!';
+    } )
+} );

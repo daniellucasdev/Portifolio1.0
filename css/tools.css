@@ -1,32 +1,12 @@
-.tool {
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 5rem 0;
-  }
-
-  .tools__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  
-  .tool h1{
+.project {
     font-size: 3rem;
     background: #000000;
-    background: -webkit-linear-gradient(
-      to right,
-      #1aff00,
-      #9afa89
-    );
-    background: linear-gradient(
-      to right,
-      #1aff00,
-      #9afa89
-    );
+    background: -webkit-linear-gradient(to right,
+            #1aff00,
+            #9afa89);
+    background: linear-gradient(to right,
+            #1aff00,
+            #9afa89);
     background-size: 100%;
     font-family: 'Press Start 2P', cursive;
     -webkit-background-clip: text;
@@ -35,4 +15,112 @@
     -moz-text-fill-color: transparent;
     text-decoration: underline;
     text-decoration-color: #00e61f;
-  }
+}
+
+#habilidades {
+    background-color: #ffffff;
+}
+
+.habilidades-pd {
+    padding-top: 93px;
+}
+
+.habilidades-pd h2 {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.skills-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 50px;
+    padding-bottom: 70px;
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 37px;
+    max-width: 55%;
+}
+
+.skill-box {
+    height: 106px;
+    width: 106px;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease 0.3s;
+}
+
+.skill-box:hover {
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+.conteiner-descricao {
+    color: rgb(0, 255, 26);
+    font-family: 'Quando', serif;
+    font-size: 20px;
+    max-width: 40%;
+}
+
+@media (max-width:1200px) {
+
+    .conteiner-descricao {
+        height: 260px;
+    }
+
+    #habilidades {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills-descricao {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        gap: 50px;
+        padding-bottom: 70px;
+        align-items: center;
+    }
+
+    .skills-descricao p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:950px) {
+    .conteiner-skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 37px;
+        max-width: 300px;
+    }
+
+    .conteiner-descricao {
+        max-width: 300px;
+    }
+
+}
+
+.skill-box .icones-habilidades {
+    transition: ease-in-out 0.3s;
+}
+
+#fundo {
+    fill: red;
+}
+
+.texto-descricao {
+    font-size: larger;
+}

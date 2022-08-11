@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/sobre.css" />
   <link rel="stylesheet" href="css/projetos.css" />
   <link rel="stylesheet" href="css/tools.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,9 +24,6 @@
 
   <nav class="navbar">
     <div class="navbar__container">
-      <div class="nav__img--card">
-        <img src="media/lgwh.png" alt="">
-      </div>
       <a href="#home" id="navbar__logo">D.L.F.A.</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> <span class="bar"></span>
@@ -109,13 +107,71 @@
 
   <!--Tools-->
 
-  <div class="tool" id="tool">
-    <h1>Ferramentas</h1>
-    <br><br><br><br>
-    <div class="tools__wrapper">
-      <div></div>
+  <section id="habilidades">
+    <div class="centralizador">
+      <div class="habilidades-pd">
+        <h2 class="project">Habilidades</h2><br><br>
+        <div class="skills-descricao">
+          <div class="conteiner-skills">
+            <div class="skill-box skill1 html-skill">
+              <img
+                class="icones-habilidades"
+                src="media/tools/1-html.png"
+                alt="html-icon"
+              />
+            </div>
+            <div class="skill-box skill2 css-skill">
+              <img
+                class="icones-habilidades"
+                src="media/tools/2-css.png"
+                alt="css-icon"
+              />
+            </div>
+            <div class="skill-box skill3 js-skill">
+              <img
+                class="icones-habilidades"
+                src="media/tools/3-js.png"
+                alt="js-icon"
+              />
+            </div>
+            <div class="skill-box skill7">
+              <img
+                class="icones-habilidades"
+                src="media/tools/4-vue.png"
+                alt="react-icon"
+              />
+            </div>
+            <div class="skill-box skill13 sass-skill">
+              <img
+                class="icones-habilidades"
+                src="media/tools/13-tailwind.png"
+                alt="sass-icon"
+              />
+            </div>
+            <div class="skill-box skill9 git-skill">
+              <img
+                class="icones-habilidades"
+                src="media/tools/9-git.png"
+                alt="git-icon"
+              />
+            </div>
+            <div class="skill-box skill10 github-skill">
+              <img
+                class="icones-habilidades"
+                src="media/tools/10-github.png"
+                alt="github-icon"
+              />
+            </div>
+          </div>
+          <div class="conteiner-descricao">
+            <p class="texto-descricao">
+              Dê uma olhada nas ferramentas que conheço!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- PROJETOS -->
 
@@ -171,6 +227,7 @@
   </div>
 
   <script src="app.js"></script>
+  <script src="teste.js"></script>
 </body>
 
 </html>
