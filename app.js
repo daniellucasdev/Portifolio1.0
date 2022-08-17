@@ -16,7 +16,7 @@ const highlightMenu = () => {
   const servicesMenu = document.querySelector('#services-page');
   let scrollPos = window.scrollY;
 
-  if (scrollPos < 600) {
+  if (scrollPos < 500) {
     aboutMenu.classList.add('highlight');
     servicesMenu.classList.remove('highlight');
     return;
@@ -26,9 +26,6 @@ const highlightMenu = () => {
     return;
   }
 
-  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
-    elem.classList.remove('highlight');
-  }
 };
 
 window.addEventListener('scroll', highlightMenu);
@@ -41,6 +38,42 @@ const hideMobileMenu = () => {
     menuLinks.classList.remove('active');
   }
 };
+
+//Botões Ferramentas
+
+const tool1 = document.querySelector('#proj1');
+const git1 = "https://github.com/herokk1/Projeto-Weather";
+
+const tool2 = document.querySelector('#proj2');
+const git2 = 'https://github.com/herokk1/Projeto-LoFi';
+
+const tool3 = document.querySelector('#proj3');
+const git3 = 'https://github.com/herokk1/Projeto-Term'
+
+const tool4 = document.querySelector('#proj4');
+const git4= ''
+
+function openInNewTab(git1) {
+  const win = window.open(git1, '_blank')
+}
+tool1.addEventListener('click', () => {
+  openInNewTab(git1)
+})
+
+function openInNewTab(git2) {
+  const win = window.open(git2, '_blank')
+}
+tool2.addEventListener('click', () => {
+  openInNewTab(git2)
+})
+
+function openInNewTab(git3) {
+  const win = window.open(git3, '_blank')
+}
+tool3.addEventListener('click', () => {
+  openInNewTab(git3)
+})
+
 
 //Botões Footer
 
@@ -91,7 +124,7 @@ const sobreSkill = [
                     '<p>HTML</p> <br> <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
                     '<p>CSS</p> <br> <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
                     '<p>JavaScript</p> <br> <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
-                    '<p>VueJS</p> <br> <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p> <br>',
+                    '<p>VueJS</p> <br> <p>VueJS é um framework com uma arquitetura enxuta, que requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script. .</p> <br>',
                     '<p>TailwindCSS</p> <br> <p>TailwindCSS é um framework de utilidade com o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet, este sendo substituído pela própria Class.</p> <br>',
                     '<p>GIT</p> <br> <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
                     '<p>Github</p> <br> <p>O GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.</p> <br>',
