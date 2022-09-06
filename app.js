@@ -12,21 +12,37 @@ menu.addEventListener('click', mobileMenu);
 const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
+
+  //Contantes do menu NAV
   const aboutMenu = document.querySelector('#about-page');
   const servicesMenu = document.querySelector('#services-page');
+  const toolsMenu = document.querySelector('#tools-page');
+  const projMenu = document.querySelector('#projects-page');
   let scrollPos = window.scrollY;
 
   if (scrollPos < 500) {
     aboutMenu.classList.add('highlight');
     servicesMenu.classList.remove('highlight');
+    toolsMenu.classList.remove('highlight');
+    toolsMenu.classList.remove('highlight');
     return;
   } else if (scrollPos < 1400) {
     aboutMenu.classList.remove('highlight');
     servicesMenu.classList.add('highlight');
+    toolsMenu.classList.remove('highlight');
+    toolsMenu.classList.remove('highlight');
     return;
   }
+    else if (scrollPos < 2100) {
+      aboutMenu.classList.remove('highlight');
+      servicesMenu.classList.remove('highlight');
+      toolsMenu.classList.add('highlight');
+      toolsMenu.classList.remove('highlight');
+      return;
+    }
+  }
 
-};
+
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
@@ -121,13 +137,13 @@ btn3.addEventListener('click', () => {
 const skills = document.querySelectorAll('.skill-box');
 const descricao = document.querySelector('.texto-descricao');
 const sobreSkill = [
-                    '<p>HTML</p> <br> <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
-                    '<p>CSS</p> <br> <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
-                    '<p>JavaScript</p> <br> <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
-                    '<p>VueJS</p> <br> <p>VueJS é um framework com uma arquitetura enxuta, que requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script. .</p> <br>',
-                    '<p>TailwindCSS</p> <br> <p>TailwindCSS é um framework de utilidade com o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet, este sendo substituído pela própria Class.</p> <br>',
-                    '<p>GIT</p> <br> <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
-                    '<p>Github</p> <br> <p>O GitHub é um serviço baseado em nuvem que hospeda um sistema de controle de versão (VCS) chamado Git. Ele permite que os desenvolvedores colaborem e façam mudanças em projetos compartilhados enquanto mantêm um registro detalhado do seu progresso.</p> <br>',
+                    '<p>HTML</p> <br>        <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
+                    '<p>CSS</p> <br>         <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
+                    '<p>JavaScript</p> <br>  <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
+                    '<p>VueJS</p> <br>       <p>VueJS requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script. .</p> <br>',
+                    '<p>TailwindCSS</p> <br> <p>TailwindCSS tem o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet, este sendo substituído pela própria Class.</p> <br>',
+                    '<p>GIT</p> <br>         <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
+                    '<p>Github</p> <br>      <p>GitHub é um serviço baseado em nuvem que hospeda GITs enquanto permite que os desenvolvedores colaborem e façam mudanças em projetos enquanto mantêm um registro do seu progresso.</p> <br>',
 ]
 skills.forEach(  (elemento, index) => {
     let index1 = index;
