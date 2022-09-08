@@ -140,7 +140,7 @@ const sobreSkill = [
                     '<p>HTML</p> <br>        <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
                     '<p>CSS</p> <br>         <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
                     '<p>JavaScript</p> <br>  <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
-                    '<p>VueJS</p> <br>       <p>VueJS requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script. .</p> <br>',
+                    '<p>VueJS</p> <br>       <p>VueJS requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script.</p> <br>',
                     '<p>TailwindCSS</p> <br> <p>TailwindCSS tem o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet, este sendo substituído pela própria Class.</p> <br>',
                     '<p>GIT</p> <br>         <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
                     '<p>Github</p> <br>      <p>GitHub é um serviço baseado em nuvem que hospeda GITs enquanto permite que os desenvolvedores colaborem e façam mudanças em projetos enquanto mantêm um registro do seu progresso.</p> <br>',

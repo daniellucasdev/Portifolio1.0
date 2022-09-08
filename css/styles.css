@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+.main {
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
 .hero {
   background: #663838;
   background: linear-gradient(to right, #161616, #000000);
@@ -90,11 +95,6 @@ h1 {
   }
 }
 
-.main {
-  background-color: #ffffff;
-  padding: 5rem 0;
-}
-
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -109,7 +109,7 @@ h1 {
 }
 
 .main__content {
-  color: #fff;
+  color: rgb(208, 208, 208);
   width: 100%;
 }
 
@@ -212,7 +212,6 @@ cursor: pointer;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
 }
 
 .fa-layer-group,
