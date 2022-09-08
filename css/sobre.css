@@ -8,6 +8,10 @@
     padding: 5rem 0;
 }
 
+.sobremim {
+  margin-bottom: 5rem;
+}
+
 .sobre h1{
     font-size: 3rem;
     background: #000000;
@@ -29,6 +33,7 @@
     -moz-text-fill-color: transparent;
     text-decoration: underline;
     text-decoration-color: #00e61f;
+    
 }
 
 .sobre__container {

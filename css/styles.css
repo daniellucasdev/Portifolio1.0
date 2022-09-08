@@ -42,7 +42,7 @@ h1 {
 }
 
 .hero__heading span {
-  background: #000000; /* fallback for old browsers */
+  background: #000000;
   background: -webkit-linear-gradient(
     to right,
     #0ade1f,
