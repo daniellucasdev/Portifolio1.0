@@ -18,7 +18,7 @@ const highlightMenu = () => {
   const servicesMenu = document.querySelector('#services-page');
   const toolsMenu = document.querySelector('#tools-page');
   const projMenu = document.querySelector('#projects-page');
-  
+
   let scrollPos = window.scrollY;
 
   if (scrollPos < 500) {
@@ -34,14 +34,14 @@ const highlightMenu = () => {
     toolsMenu.classList.remove('highlight');
     return;
   }
-    else if (scrollPos < 2100) {
-      aboutMenu.classList.remove('highlight');
-      servicesMenu.classList.remove('highlight');
-      toolsMenu.classList.add('highlight');
-      toolsMenu.classList.remove('highlight');
-      return;
-    }
+  else if (scrollPos < 2100) {
+    aboutMenu.classList.remove('highlight');
+    servicesMenu.classList.remove('highlight');
+    toolsMenu.classList.add('highlight');
+    toolsMenu.classList.remove('highlight');
+    return;
   }
+}
 
 
 
@@ -68,7 +68,7 @@ const tool3 = document.querySelector('#proj3');
 const git3 = 'https://github.com/herokk1/Projeto-Term'
 
 const tool4 = document.querySelector('#proj4');
-const git4= ''
+const git4 = ''
 
 function openInNewTab(git1) {
   const win = window.open(git1, '_blank')
@@ -138,20 +138,20 @@ btn3.addEventListener('click', () => {
 const skills = document.querySelectorAll('.skill-box');
 const descricao = document.querySelector('.texto-descricao');
 const sobreSkill = [
-                    '<p>HTML</p> <br>        <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
-                    '<p>CSS</p> <br>         <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
-                    '<p>JavaScript</p> <br>  <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
-                    '<p>VueJS</p> <br>       <p>VueJS requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script.</p> <br>',
-                    '<p>TailwindCSS</p> <br> <p>TailwindCSS tem o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet, este sendo substituído pela própria Class.</p> <br>',
-                    '<p>GIT</p> <br>         <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
-                    '<p>Github</p> <br>      <p>GitHub é um serviço baseado em nuvem que hospeda GITs enquanto permite que os desenvolvedores colaborem e façam mudanças em projetos enquanto mantêm um registro do seu progresso.</p> <br>',
+  '<p>HTML</p> <br>        <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
+  '<p>CSS</p> <br>         <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
+  '<p>JavaScript</p> <br>  <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
+  '<p>VueJS</p> <br>       <p>VueJS requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script.</p> <br>',
+  '<p>TailwindCSS</p> <br> <p>TailwindCSS tem o intuito de construir rapidamente interfaces sem a necessidade de interagir demasiadamente com o Stylesheet por substituí-lo pela Class.</p> <br>',
+  '<p>GIT</p> <br>         <p>Simplesmente o melhor sistema de versões do mundo.</p> <br>',
+  '<p>Github</p> <br>      <p>GitHub permite que os desenvolvedores colaborem e façam mudanças em projetos enquanto mantêm um registro do seu progresso.</p> <br>',
 ]
-skills.forEach(  (elemento, index) => {
-    let index1 = index;
-    elemento.addEventListener('mouseover', (evento) => {
-        descricao.innerHTML = `<p>${sobreSkill[index1]} </p>` ;
-    } )
-    elemento.addEventListener('mouseout', (evento, elemento,) => {
-        descricao.innerHTML = 'Dê uma olhada nas ferramentas que conheço!';
-    } )
-} );
+skills.forEach((elemento, index) => {
+  let index1 = index;
+  elemento.addEventListener('mouseover', (evento) => {
+    descricao.innerHTML = `<p>${sobreSkill[index1]} </p>`;
+  })
+  elemento.addEventListener('mouseout', (evento, elemento,) => {
+    descricao.innerHTML = 'Dê uma olhada nas ferramentas que conheço!';
+  })
+});

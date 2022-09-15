@@ -44,7 +44,6 @@
 
 #navbar__logo:hover {
     background-image: linear-gradient(to top, #09c438 0%, #ffffff 100%);
-    transition: 0.3s ease;
 }
 
 .navbar__menu {
@@ -127,19 +126,6 @@
         padding: 2rem;
         width: 100%;
         display: table;
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
     }
 
     #mobile-menu {
