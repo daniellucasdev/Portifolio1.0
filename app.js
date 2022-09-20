@@ -138,7 +138,7 @@ btn3.addEventListener('click', () => {
 const skills = document.querySelectorAll('.skill-box');
 const descricao = document.querySelector('.texto-descricao');
 const sobreSkill = [
-  '<p>HTML</p> <br>        <p>É uma linguagem de programação construída em cima de Tags voltada para a Web.</p> <br>',
+  '<p>HTML</p> <br>        <p>É uma linguagem de marcação construída em cima de Tags voltada para a Web.</p> <br>',
   '<p>CSS</p> <br>         <p>É uma linguagem de programação que permite a estilização do HTML</p> <br>',
   '<p>JavaScript</p> <br>  <p>É uma linguagem de programação responsável principalmente pela interatividade usuário com o site.</p> <br>',
   '<p>VueJS</p> <br>       <p>VueJS requer uma configuração mínima na criação de um projeto e pode ser facilmente integrado com uma aplicação já existente através de uma simples tag script.</p> <br>',
