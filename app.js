@@ -68,7 +68,7 @@ const tool3 = document.querySelector('#proj3');
 const git3 = 'https://github.com/herokk1/Projeto-Term'
 
 const tool4 = document.querySelector('#proj4');
-const git4 = ''
+const git4 = 'https://github.com/herokk1/Kermit0.6v13'
 
 function openInNewTab(git1) {
   const win = window.open(git1, '_blank')
